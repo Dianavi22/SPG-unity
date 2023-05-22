@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject _legalPage;
     [SerializeField] GameObject _contactPage;
     [SerializeField] GameObject _AudioManager;
+    [SerializeField] GameObject _ErrorServer;
     //[SerializeField] GameObject _choiceBattleRoyale;
 
     [Header("Animations")]
@@ -85,6 +86,17 @@ public class MainMenu : MonoBehaviour
     public void ShowHeadButton()
     {
         _buttonHead.SetActive(true);
+    }
+
+    public void ShowServerError()
+    {
+        _ErrorServer.SetActive(true);
+        print("ERROR SERVER");
+    }
+
+    public void HideServerError()
+    {
+        _ErrorServer.SetActive(false);
     }
 
     public void ShowButtonsMainMenu()
